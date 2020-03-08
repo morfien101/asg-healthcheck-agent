@@ -1,0 +1,41 @@
+{
+    "pretty_logs": true,
+    "debug_logging": true,
+    "health_checks": [
+        {
+            "name": "hc1",
+            "description": "Test health check",
+            "command": "/bin/bash",
+            "arguments": ["./testscript.sh", "0"],
+            "frequency_in_seconds": 2,
+            "allowed_failures": 2,
+            "recovery_success_count": 2
+        },
+        {
+            "name": "control file",
+            "description": "reads control file and determines if it must fail",
+            "command": "/bin/bash",
+            "arguments": [
+                "./readfile.sh",
+                "./controlFile.txt",
+                "aa5aa23fed587045b0a3123b442549c09d52cd68ab762fbda3766f3f94476561"
+            ],
+            "frequency_in_seconds": 2
+        }
+    ],
+    "failure_hooks": [
+        {
+            "name": "Failure hook 1",
+            "description": "Test failure hook",
+            "command": "/bin/bash",
+            "arguments": ["/home/randyc/personal/code/go/github.com/morfien101/asg-healthcheck-agent/testscript.sh", "1"],
+            "max_retry": 6,
+            "seconds_between_retries": 2
+        }
+    ],
+    "statsd": {
+        "enabled": true
+    },
+    "startup_grace_seconds": 5,
+    "exit_after_failure_hooks": true
+}

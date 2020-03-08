@@ -1,0 +1,7 @@
+github.com/gorilla/mux v1.7.4 h1:VuZ8uybHlWmqV03+zRzdwKL4tUnIp1MAQtp1mIFE1bc=
+github.com/gorilla/mux v1.7.4/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/morfien101/go-statsd v1.2.2 h1:5p0Waec3Au3972mFWBr2IKYm5gRFKhc9H7iB/RY/RWM=
+github.com/morfien101/go-statsd v1.2.2/go.mod h1:mv95a74taxNHD8n4tQW9msKYtymSRD53fTvX6lqtGeQ=
+github.com/morfien101/service v1.0.5 h1:mxoSqauAxEORAlQHqVjeMDGRPg757yIZMLlQbzExyUc=
+github.com/morfien101/service v1.0.5/go.mod h1:Ub/SUc4NiBwi4QSYC3ngzmm/REWn4tA/L6IthkRvPjc=
+golang.org/x/sys v0.0.0-20190204203706-41f3e6584952/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
